@@ -1,0 +1,25 @@
+{
+    "LlaveString": "Texto",
+    "otro_string": "Texto 2",
+    "entero": 1,
+    "decimal": 4.7,
+    "booleano_1": true,
+    "booleano_2": false,
+    "nulo": null,
+    "array": [1,2,3],
+    "objeto": {
+        "nombre": "Paco"
+    }, 
+    "lista_o_arreglo": [
+        {
+            "nombre": "Fredy"
+        },
+        {
+            "nombre": "Juan"
+        }
+    ]
+}
+
+
+
+
