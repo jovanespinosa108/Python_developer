@@ -1,3 +1,4 @@
+#se importa con pip install phonenumbers en terminal
 import phonenumbers
 
 def valid_phonenumber(phonenum_str, country_code=None):
