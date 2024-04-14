@@ -4,8 +4,8 @@
 for letra in "Texto":
     print(letra)
 
-#iterar en una lista "[]"
 
+#iterar en una lista "[]"
 lenguajes = ["python", "Java", "C++", "JavaScript"]
 for elemento in lenguajes:
     print(elemento)
