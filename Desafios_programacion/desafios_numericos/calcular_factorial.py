@@ -18,12 +18,15 @@ print(factorial_num(7)) #5040
 
 def calcular_factorial_recursivo(numeroR):
 
-    if numeroR == 0 or numeroR == 1:
-        return 1
-    return numeroR * calcular_factorial_recursivo(numeroR -1)
+    if numeroR == 0 or numeroR == 1: # si es igual a 1 o 0
+        return 1 #regresa 1
+    return numeroR * calcular_factorial_recursivo(numeroR -1) 
 
 print(calcular_factorial_recursivo(0)) #1
 print(calcular_factorial_recursivo(3)) #6
 print(calcular_factorial_recursivo(6)) #720
 print(calcular_factorial_recursivo(7)) #5040
 
+
+#retornar la multiplicación del número que entra en la función 
+#por el resultado de llamar a la misma función pasando como argumento el número anterior, es decir, el número -1.
