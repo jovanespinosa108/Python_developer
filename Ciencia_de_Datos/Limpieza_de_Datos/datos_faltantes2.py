@@ -59,4 +59,22 @@ dtype: int64 """
 #declara el nombre de la columna a eliminar dentro de una lista
 df_updated = df.drop(axis=1, columns=["Apellido"])
 
-print(df_updated.head(20))
+print(df_updated.head(20)) 
+
+print(df_updated.shape) #(251,8) imprime tabla actualizada
+
+#imprimir filas con valores nulos
+print(df_updated[df_updated.isnull().any(axis=1)]) #[106 rows x 8 columns]
+
+#elimina filas sin valores, se guardan los datos en nueva variable
+df_act_filas = df_updated.dropna(axis=0) #funcion dropna() elimina no valores
+
+#imprime la nueva tabla usando la nueva varible
+print(df_act_filas) #[145 rows x 8 columns]
+
+#elimina filas que tengan menos de 5 valores validos
+df_act_filas = df_updated.dropna(axis=0, thresh=5) # thresh indica el numero minimo de valores validos contenidos
+
+#imprime nueva tabla con filas que tienen minimo 5 valores validos
+print(df_act_filas) #[246 rows x 8 columns]
+
